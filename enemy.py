@@ -1,3 +1,4 @@
+import random
 class Enemy:
     
     # type_of_enemy:str
@@ -22,4 +23,7 @@ class Enemy:
         print(f'{self.type_of_enemy} moves closer to you.')
 
     def attack(self):   
-       print(f'{self.type_of_enemy} attacks you for {self.attack_damage} damage.') 
+       print(f'{self.__type_of_enemy} attacks you for {self.attack_damage} damage.') 
+
+    def special_attack(self):
+        print(f'Enemy has no special attack')
