@@ -6,7 +6,7 @@ big_zombie = Enemy('Big Zombie', 10, 100)
 # zombie.attack_damage = 1
 # zombie.health_points = 10
 
-print(big_zombie.attack())
+print(zombie.get_type_of_enemy())
 
 
 

@@ -5,9 +5,15 @@ class Enemy:
     # attack_damage: int 
 
     def __init__(self, type_of_enemy, attack_damage, health_points):
-        self.type_of_enemy = type_of_enemy
+        self.__type_of_enemy = type_of_enemy # private variable
         self.attack_damage = attack_damage 
         self.health_points = health_points
+
+    # setters
+
+    # getters
+    def get_type_of_enemy(self):
+        return self.__type_of_enemy
 
     def talk(self):
         print(f'I am a {self.type_of_enemy}. Be prepared to fight!')
